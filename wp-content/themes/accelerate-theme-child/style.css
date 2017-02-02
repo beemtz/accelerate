@@ -1,0 +1,147 @@
+/*
+ Theme Name:   Accelerate Theme Child
+ Theme URI:    http://example.com/accelerate-theme-child/
+ Description:  Accelerate Child Theme - Accelerate
+ Author:       Bee Martinez
+ Author URI:   http://thebeeletter.com
+ Template:     accelerate-theme
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  accelerate-theme-child
+*/
+
+@import url("../accelerate-theme/style.css");
+
+/* homepage styles */
+.home-page {
+
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+
+/* update top nav color */
+
+#masthead {
+
+  background: none repeat scroll 0 0 #45ac9d;
+}
+
+/* button background color */
+
+.button {
+
+  background: none repeat scroll 0 0 #45ac9d;
+}
+
+#masthead nav ul li {
+
+  float:left;
+  margin: -25px;
+}
+/* blogpost format */
+
+.blog-post {
+	width: 50%;
+}
+
+.blog-post h2 {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+
+.blog-post h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+}
+
+.blog-post .read-more-link {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+/* case studies */
+
+article.case-study {
+  margin:40px 0 0;
+
+}
+
+aside.case-study-sidebar {
+  float:left;
+  width:314px;
+  margin: -30px 40px 0 0;
+}
+
+div.case-study-images {
+  float:left;
+  width:606px;
+}
+
+div.case-study-images img {
+  margin-bottom:50px;
+  border:1px solid #dddddd;
+}
+
+.case-study-sidebar h2 {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 3%;
+}
+
+.case-study-sidebar h5 {
+  font-size: 16px;
+  font-weight: lighter;
+  color: lightgray;
+}
+/* front-page case studies */
+
+.featured-work h4 {
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+li.individual-featured-work {
+  list-style: none;
+  display: inline-block;
+}
+
+.featured-work h3{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.featured-work img{
+  margin: 0 0 0 8px;
+}
+
+/* contact form */
+
+.field-wrap label {
+  font-size: 1rem;
+}
+
+div.nf-field label {
+  font-weight: 100;
+}
+
+.field-wrap input[type="submit"], .field-wrap input[type="button"], .field-wrap button {
+  width: auto;
+  border: none;
+  float: right;
+  color: white;
+  font-weight: bold;
+  background: #45ac9d;
+  padding: 5px 50px 5px 50px;
+}
+
+textarea#nf-field-3 {
+  border: 1px solid #BFBFBF;
+}
