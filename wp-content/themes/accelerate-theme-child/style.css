@@ -145,3 +145,61 @@ div.nf-field label {
 textarea#nf-field-3 {
   border: 1px solid #BFBFBF;
 }
+
+/*about*/
+
+.about-hero {
+background: url("img/taxi-photo.jpg") no-repeat scroll center / cover rgba(0, 0, 0, 0);
+height: auto;
+padding: 100px 0;
+position: relative;
+text-align: center;
+}
+.about-hero p {
+  color: white;
+}
+
+.about-hero span {
+  color: #45ac9d;
+}
+
+.about-description {
+  text-align: center;
+}
+
+.about-description h4 {
+  text-transform: uppercase;
+}
+
+.services-query {
+  margin: 20px 200px 20px 200px;
+}
+
+.services-query p {
+  width: 500px;
+}
+
+.pre-footer {
+  margin: 20px 200px 20px 200px;
+}
+
+.pre-footer h3 {
+  float: left;
+}
+
+.pre-footer a {
+  color: white;
+}
+
+.pf-button {
+  width: auto;
+  border: none;
+  float: right;
+  font-weight: bold;
+  background: #45ac9d;
+  padding: 5px 50px 5px 50px;
+}
+
+.pre-footer a {
+  color: white;
+}

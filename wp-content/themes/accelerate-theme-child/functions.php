@@ -39,7 +39,7 @@ function create_custom_post_types() {
     );
 
     /* new function for about / services */
-    
+
     register_post_type( 'services',
         array(
             'labels' => array(
@@ -47,7 +47,7 @@ function create_custom_post_types() {
                 'singular_name' => __( 'service' )
             ),
             'public' => true,
-            'has_archive' => true,
+            'has_archive' => false,
             'rewrite' => array( 'slug' => 'services' ),
         )
     );
