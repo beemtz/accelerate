@@ -37,16 +37,25 @@
   float:left;
   margin: -25px;
 }
+
+/* styles for blog and tweet */
+
 /* blogpost format */
+
+.post-and-tweet {
+  display: flex;
+}
 
 .blog-post {
 	width: 50%;
+  padding-right: 50px;
 }
 
 .blog-post h2 {
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
+  line-height: inherit;
 }
 
 .blog-post h4 {
@@ -57,6 +66,48 @@
 }
 
 .blog-post .read-more-link {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+/* widget area - tweets*/
+
+.widget {
+  font-size: 0.83em;
+  font-weight: 600;
+  padding: 0;
+}
+
+.widget-area {
+	width: 50%;
+}
+
+.widget-title {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+  color: #414141;
+  line-height: inherit;
+}
+
+.widget ul li {
+  color: #414141;
+  font-size: 1rem;
+  font-weight: 100;
+  list-style-type: none;
+}
+
+.widget-area h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+}
+
+.widget-area .follow-link {
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
@@ -150,13 +201,16 @@ textarea#nf-field-3 {
 
 .about-hero {
 background: url("img/taxi-photo.jpg") no-repeat scroll center / cover rgba(0, 0, 0, 0);
-height: auto;
-padding: 100px 0;
+height: 350px;
 position: relative;
 text-align: center;
 }
+
 .about-hero p {
   color: white;
+  padding: 100px 0;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 .about-hero span {
@@ -172,15 +226,38 @@ text-align: center;
 }
 
 .services-query {
-  margin: 20px 200px 20px 200px;
+  margin-bottom: 50px;
+  overflow: auto; /* to clear floats */
 }
 
-.services-query p {
-  width: 500px;
+.service {
+  overflow: auto; /* to clear floats */
+  margin-bottom: 50px;
 }
+
+/* This will alternate the position of the description depending on whether it is contained within an odd or even numbered iteration of the service */
+.service:nth-child(odd) .service-description{
+  float: right;
+  margin-left: 3%;
+}
+.service-description {
+  width: 70%;
+  float: left;
+  margin-right: 3%;
+}
+
+.service-icon {
+  width: 27%;
+  float: left;
+}
+
+/* END OF THE SORCERY */
 
 .pre-footer {
-  margin: 20px 200px 20px 200px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px dotted #e3e1e1;
+  vertical-align: middle;
 }
 
 .pre-footer h3 {
@@ -191,15 +268,42 @@ text-align: center;
   color: white;
 }
 
+.pf-button-box {
+  padding-top: 33px;
+}
+
 .pf-button {
   width: auto;
   border: none;
-  float: right;
   font-weight: bold;
   background: #45ac9d;
   padding: 5px 50px 5px 50px;
 }
 
-.pre-footer a {
-  color: white;
+/* 404 */
+
+.np-page {
+  height: 1024px;
+}
+
+.np-hero {
+background: url("img/desktop.png") no-repeat scroll center / cover rgba(0, 0, 0, 0);
+height: 50%;
+}
+
+.np-text {
+  display: inline;
+  text-align: center;
+  max-width: 50%;
+}
+.np-text h2, p {
+  color: #414141;
+}
+
+.np-text h3, a {
+  color: #45ac9d;
+}
+
+.np-text a {
+  color: #45ac9d;
 }
